@@ -1,0 +1,211 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fundo-principal: #f5f5f5;
+    --texto: #000000;
+    --fundo-header: #ffffff;
+    --destaque: #6a00ff;
+}
+
+   body.escuro {
+    --fundo-principal: #121212;
+    --texto: #e0e0e0;
+    --fundo-header: #1e1e1e;
+    --destaque: #b388ff;
+}
+
+/*body.escuro {
+    --fundo-principal: #121212;
+    --texto: #e0e0e0;
+    --fundo-header: #1e1e1e;
+    --destaque: #b388ff;
+}*/
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5em;
+
+    background-color: var(--fundo-principal);
+    color: var(--texto);
+
+    transition: background-color 0.5s, color 0.5s;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
+
+header {
+    background-color: var(--fundo-header);
+
+    padding: 30px;
+    text-align: center;
+
+    transition: background-color 0.5s;
+}
+
+
+/* =========================
+   TÍTULO
+   ========================= */
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--texto);
+
+    transition: color 0.5s;
+}
+
+
+/* =========================
+   SUBTÍTULOS
+   ========================= */
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--destaque);
+
+    transition: color 0.5s;
+}
+
+
+/* =========================
+   PARÁGRAFOS
+   ========================= */
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+
+    transition: color 0.5s;
+}
+
+
+/* =========================
+   CONTEÚDO
+   ========================= */
+
+.over {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* =========================
+   BOTÃO DO TEMA
+   ========================= */
+
+#botao-tema {
+    position: fixed;
+
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: var(--texto);
+    color: var(--fundo-principal);
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    transition: background-color 0.5s,
+                color 0.5s,
+                transform 0.3s;
+}
+
+
+/* Efeito ao passar o mouse */
+
+#botao-tema:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@charset "UTF-8";
+
+/* 
+  Variáveis para cores:
+  --fundo-principal
+  --texto
+  --texto-inverso
+  --destaque
+  --destaque-inverso
+  --fundo-card
+*/
+
+/* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --fundo-principal: #f5f5f5;
+    --texto: #000000;
+    --texto-inverso: #ffff;
+}
+  
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+}
+  
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.5em;
+  background-color: var(--fundo-principal);
+  color: var(--texto);
+  transition: background-color 0.5s, color 0.5s;
+}
+
+header {
+  background-color: var();
+}
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--texto);
+}
+
+h2 {
+    font-family: 'Rajdhani', sans-serif;
+    color: var(--texto);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    color: var(--texto);
+}
